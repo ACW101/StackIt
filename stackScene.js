@@ -165,7 +165,7 @@ function playGameMusic(soundfile){
 
 		// load a sound and set it as the Audio object's buffer
 		var audioLoader = new THREE.AudioLoader();
-		audioLoader.load( '/sounds/'+soundfile, function( buffer ) {
+		audioLoader.load( 'sounds/'+soundfile, function( buffer ) {
 			sound.setBuffer( buffer );
 			sound.setLoop( false );
 			sound.setVolume( 0.05 );
